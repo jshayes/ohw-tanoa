@@ -25,6 +25,11 @@ class CfgFunctions
             class log {};
         };
 
+        class Math
+        {
+            class radialScan {};
+        };
+
         class Misc
         {
             class executeOnAllItems {};

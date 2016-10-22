@@ -58,7 +58,7 @@ while {true} do {
     _time = daytime;
 
     [
-        "[Weather] Weather forcast set at: %1. Next update at: %2", 
+        "[Weather] Weather forcast set at: %1. Next update at: %2",
         [_time, "HH:MM"] call BIS_fnc_timeToString,
         [(_time + (_future / 3600)) mod 24, "HH:MM"] call BIS_fnc_timeToString
     ] call jh_fnc_log;

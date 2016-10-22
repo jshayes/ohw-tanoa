@@ -31,7 +31,7 @@ jh_pvar_lzPosition = _lzPos;
 publicVariable "jh_pvar_lzPosition";
 
 [
-    "[Insertion] Selected LZ location: %1. LZ is %2m away from the AO.", 
+    "[Insertion] Selected LZ location: %1. LZ is %2m away from the AO.",
     mapGridPosition _lzPos,
     _aoPos distance _lzPos
 ] call jh_fnc_log;

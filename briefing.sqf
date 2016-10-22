@@ -17,11 +17,11 @@ Task 4 - Exfil<br/>
 Once you have the intel, we need you to get back home with it. We'll have a chopper on standby waiting for you to radio in. Find a suitable spot for him, then radio for a pick up.
 ";
 player createDiaryRecord [
-    "Diary", 
+    "Diary",
     [
         "Mission",
         format [
-            _text, 
+            _text,
             format ["<marker name='mkrAO'>%1</marker>", text jh_pvar_aoLocation]
         ]
     ]
@@ -32,11 +32,11 @@ We had some drones flyby and scope out the area. From what we can see, you shoul
 We have spotted multiple vehicle patrols. Looks like some light armour, and some heavy armour. There is also a helicopter patrolling the area. Aside from that, there looks to be a dozen or so squads patrolling the area.
 ";
 player createDiaryRecord [
-    "Diary", 
+    "Diary",
     [
         "Intel",
         format [
-            _text, 
+            _text,
             format ["<marker name='mkrAO'>%1</marker>", text jh_pvar_aoLocation]
         ]
     ]
@@ -44,11 +44,11 @@ player createDiaryRecord [
 
 _text = "We have arranged to get some Hunters near your insertion location. There are a total of 2 vehicles available for you, however, only one of them is armed. You will be able to find at the side of a road to the %1 of the LZ.";
 player createDiaryRecord [
-    "Diary", 
+    "Diary",
     [
         "Transport",
         format [
-            _text, 
+            _text,
             format ["<marker name='mkrAO'>%1</marker>", (jh_pvar_lzPosition getDir jh_pvar_vehicleStartPosition) call jh_fnc_getCardinalDirection]
         ]
     ]

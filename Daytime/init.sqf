@@ -20,27 +20,27 @@ switch (_timeOfDay) do {
     };
     case 1: {
         LogTimeSelection("dawn");
-        _daytime = _dawnNum;        
+        _daytime = _dawnNum;
     };
     case 2: {
         LogTimeSelection("morning");
-        _daytime = ([_dawnNum + 2, 12] call BIS_fnc_randomNum);     
-        
+        _daytime = ([_dawnNum + 2, 12] call BIS_fnc_randomNum);
+
     };
     case 3: {
         LogTimeSelection("afternoon");
-        _daytime = ([12, _duskNum - 2] call BIS_fnc_randomNum);     
-        
+        _daytime = ([12, _duskNum - 2] call BIS_fnc_randomNum);
+
     };
     case 4: {
         LogTimeSelection("dusk");
-        _daytime = _duskNum;        
+        _daytime = _duskNum;
     };
     case 5: {
         LogTimeSelection("night");
         _nightTime1 = [(_duskNum + 2), 24] call BIS_fnc_randomNum;
         _nightTime2 = [0, (_dawnNum - 2)] call BIS_fnc_randomNum;
-        _daytime = (selectRandom [_nightTime1, _nightTime2]);       
+        _daytime = (selectRandom [_nightTime1, _nightTime2]);
     };
 };
 

@@ -49,7 +49,7 @@ for "_i" from 0 to 1 do {
 };
 
 [
-    "[Insertion] Vehicles placed at %1, which is %2m to the %3 of the LZ", 
+    "[Insertion] Vehicles placed at %1, which is %2m to the %3 of the LZ",
     mapGridPosition jh_pvar_vehicleStartPosition,
     jh_pvar_lzPosition distance jh_pvar_vehicleStartPosition,
     (jh_pvar_lzPosition getDir jh_pvar_vehicleStartPosition) call jh_fnc_getCardinalDirection

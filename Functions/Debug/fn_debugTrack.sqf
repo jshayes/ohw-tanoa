@@ -22,7 +22,7 @@ if (jh_var_markerDebug) then {
                 } foreach jh_var_markerDebugUnits;
 
                 sleep 2;
-            }; 
+            };
         };
     };
 

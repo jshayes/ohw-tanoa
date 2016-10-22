@@ -16,7 +16,7 @@ while {_distance < _maxDistance} do {
         _dir = _dir + _angle;
         _pos = [_position, _distance, _dir + _startAngle] call Zen_ExtendPosition;
 
-        _pos call _callback;
+        if (_pos call _callback) exitWith {_distance = _maxDistance;};
     };
 
     _distance = _distance + _distanceStep;

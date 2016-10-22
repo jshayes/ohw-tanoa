@@ -2,32 +2,19 @@ if (!isServer) exitWith {};
 
 waitUntil {!isNil "jh_pvar_lzPosition"};
 
-private _distance = 300;
 private _road = objNull;
-
-while {true} do {
-    _found = false;
-    _dir = random 360;
-
-    for "_i" from 1 to 360 step 2 do {
-        _dir = _dir + _i;
-        _x = (jh_pvar_lzPosition select 0) + _distance * (sin _dir);
-        _y = (jh_pvar_lzPosition select 1) + _distance * (cos _dir);
-        _vehiclePos = [_x, _y];
-
-        _road = roadAt _vehiclePos;
-        if (!isNull _road) exitWith {_found = true};
-    };
-
-    if (_found) exitWith {};
-
-    _distance = _distance + 50;
-
-    [
-        "[Insertion] Failed to find a valid vehicle point. Expanding search radius to %1m.",
-        _distance
-    ] call jh_fnc_log;
+private _checkPosition = {
+    _road = roadAt _this;
+    !isNull _road
 };
+
+[
+    _checkPosition,
+    jh_pvar_lzPosition,
+    [200, 1000],
+    random 360,
+    25
+] call jh_fnc_radialScan;
 
 private _roadDir = _road call jh_fnc_getRoadDirection;
 private _roadPos = getPos _road;

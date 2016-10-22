@@ -1,0 +1,36 @@
+#include "Zen_FrameworkFunctions\Zen_DialogSystem\Zen_Dialog.hpp"
+class CfgNotifications {
+    #include "Zen_FrameworkFunctions\Zen_TaskSystem\Zen_TaskNotifications.hpp"
+};
+
+enableDebugConsole = 2;
+enableTeamSwitch = 1;
+
+class Params
+{
+    #include "Weather\Params.hpp"
+    #include "Daytime\Params.hpp"
+    #include "Insertion\Params.hpp"
+};
+
+class CfgFunctions
+{
+    class JH
+    {
+        tag = "jh";
+
+        class Debug
+        {
+            class debugTrack {};
+            class log {};
+        };
+
+        class Misc
+        {
+            class executeOnAllItems {};
+            class getCardinalDirection {};
+            class getRoadDirection {};
+            class removeFirstAidKits {};
+        };
+    };
+};

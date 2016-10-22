@@ -49,7 +49,7 @@ player createDiaryRecord [
         "Transport",
         format [
             _text,
-            format ["<marker name='mkrAO'>%1</marker>", (jh_pvar_lzPosition getDir jh_pvar_vehicleStartPosition) call jh_fnc_getCardinalDirection]
+            format ["<marker name=''>%1</marker>", (jh_pvar_lzPosition getDir jh_pvar_vehicleStartPosition) call jh_fnc_getCardinalDirection]
         ]
     ]
 ];

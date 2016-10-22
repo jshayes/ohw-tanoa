@@ -13,6 +13,4 @@ publicVariable "jh_pvar_insertHelo";
 
 jh_pvar_insertHelo call jh_fnc_removeFirstAidKits;
 
-{
-    _x moveInCargo jh_pvar_insertHelo;
-} foreach units group jh_player1;
+[jh_var_playerGroup, jh_pvar_insertHelo] call Zen_MoveInVehicle;

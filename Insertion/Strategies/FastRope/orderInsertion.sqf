@@ -11,6 +11,6 @@ sleep 5;
 
 sleep 5;
 
-_heloDestinationPos = [_aoPos, 10000, _dir] call Zen_ExtendPosition;
+_heloDestinationPos = [_lzPos, 10000, _dir] call Zen_ExtendPosition;
 
-[jh_pvar_insertHelo, _heloDestinationPos] spawn Zen_OrderVehicleMove;
+[jh_pvar_insertHelo, _heloDestinationPos] call Zen_OrderVehicleMove;

@@ -26,3 +26,5 @@ sleep 1;
 call compile preprocessFileLineNumbers "Insertion\spawnHelicopter.sqf";
 
 call jh_fnc_orderInsertion;
+
+deleteVehicle jh_pvar_insertHelo;

@@ -2,7 +2,7 @@ private _aoPos = jh_pvar_aoPosition;
 private _lzPos = jh_pvar_lzPosition;
 private _dir = _aoPos getDir _lzPos;
 
-private _heloStartPos = [_aoPos, 7000, _dir] call Zen_ExtendPosition;
+private _heloStartPos = [_lzPos, 2000, _dir] call Zen_ExtendPosition;
 
 jh_pvar_insertHelo = [
     _heloStartPos,

@@ -7,8 +7,6 @@ Zen_Print_All_Errors = true;
 
 enableSaving [false, false];
 
-diag_log __FILE__;
-
 // <Your mission name here> by <your name here>
 // Version = <the date here>
 // Tested with ArmA 3 <version number>
@@ -30,7 +28,9 @@ if (isServer) then {
 
 sleep 1;
 
-waitUntil {!isNil "jh_pvar_insertHelo"};
+execVM "Objectives\init.sqf";
+
+if (isDedicated) exitWith {};
 
 sleep 5;
 

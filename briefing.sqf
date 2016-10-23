@@ -10,7 +10,7 @@ Your tasks are as follows<br/><br/>
 Task 1 - Approach %1<br/>
 We will be dropping you at a <marker name='mkrLZ'>safe distance</marker> from the AO. You are to carefully make your way toward the AO.<br/><br/>
 Task 2 - Locate the intel<br/>
-Once you make your way to %1, search the area for the intel. Once you have located it, you will upload a copy of the data to the drive. After this you are to wipe the device.<br/><br/>
+Once you make your way to %1, search the area for the intel. Once you have located it, you will upload a copy of the data to out network.<br/><br/>
 Task 3 - Locate and eliminate the HVT<br/>
 This is an optional task. If you do find the HVT, take him out.<br/><br/>
 Task 4 - Exfil<br/>

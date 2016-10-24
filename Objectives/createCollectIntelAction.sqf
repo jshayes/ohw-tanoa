@@ -35,13 +35,19 @@ private _codeCompleted =
 {
     [jh_pvar_intelTask, 'succeeded'] call Zen_UpdateTask;
 
-    [
+    jh_pvar_extractTask = [
         group player,
         "Secure an LZ for extraction, then radio in your coordinates.",
         "Extract",
         0,
         true
     ] call Zen_InvokeTask;
+    publicVariable "jh_pvar_extractTask";
+
+    _trg = createTrigger ["EmptyDetector", getPos player];
+    _trg setTriggerArea [5, 5, 0, false];
+    _trg setTriggerActivation ["ALPHA", "PRESENT", true];
+    _trg setTriggerStatements ["this", "thisTrigger execVM 'Objectives\startExtraction.sqf'", ""];
 };
 private _codeInterrupted = {};
 private _arguments = [];

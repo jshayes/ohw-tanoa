@@ -10,13 +10,14 @@ _units = units jh_var_playerGroup;
 waitUntil {
     sleep 1;
 
-    {
-        if (vehicle _x == _x) then {
-            _units = _units - [_x];
-        };
-    } foreach _units;
+    _units = [
+        units jh_var_playerGroup,
+        {
+            vehicle _this == _this
+        }
+    ] call Zen_ArrayFilterCondition;
 
-    (count _units == 0) && ((jh_pvar_insertHelo distance jh_pvar_lzPosition) > 100)
+    (count _units == 0) && ((jh_pvar_insertHelo distance jh_pvar_lzPosition) > 250)
 };
 
 jh_pvar_intelTask = [

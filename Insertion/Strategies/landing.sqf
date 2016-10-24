@@ -6,4 +6,4 @@ jh_fnc_selectInsertionLocation = {
     _fnc_checkPosition call compile preprocessFileLineNumbers "Insertion\selectInsertionLocation.sqf"
 };
 
-jh_fnc_orderInsertion = call compileFinal preprocessFileLineNumbers "Insertion\Strategies\Landing\orderInsertion.sqf"
+jh_fnc_orderInsertion = compileFinal preprocessFileLineNumbers "Insertion\Strategies\Landing\orderInsertion.sqf"

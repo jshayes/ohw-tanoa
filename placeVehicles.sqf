@@ -42,4 +42,4 @@ for "_i" from 0 to 1 do {
     (jh_pvar_lzPosition getDir jh_pvar_vehicleStartPosition) call jh_fnc_getCardinalDirection
 ] call jh_fnc_log;
 
-"B_supplyCrate_F"
+// "B_supplyCrate_F"

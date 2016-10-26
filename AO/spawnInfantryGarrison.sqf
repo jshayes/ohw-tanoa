@@ -1,3 +1,5 @@
+#include "defines.hpp"
+
 // Spawn town garrisoned units
 private _nearBuilding = nearestBuilding (jh_pvar_aoPosition);
 private _housesArray = nearestTerrainObjects[getPosATL _nearBuilding, ["Building", "House"], 300, false];
@@ -12,7 +14,7 @@ for "_i" from 0 to 6 do {
     _group = [
         getPosATL _house,
         resistance,
-        0.5,
+        ENEMY_SKILL,
         [2, 3],
         "Men",
         "IND_F"

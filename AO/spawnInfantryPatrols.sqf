@@ -1,3 +1,5 @@
+#include "defines.hpp"
+
 // Spawn Distant infantry patrols
 private _groups = [];
 private _unitCount = 0;
@@ -11,7 +13,7 @@ for "_i" from 0 to 9 do {
     _group = [
         _pos,
         resistance,
-        0.5,
+        ENEMY_SKILL,
         [3, 5],
         "Men",
         "IND_F"
@@ -43,7 +45,7 @@ for "_i" from 0 to 6 do {
     _group = [
         _pos,
         resistance,
-        0.5,
+        ENEMY_SKILL,
         [2, 3],
         "Men",
         "IND_F"

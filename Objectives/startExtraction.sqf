@@ -16,8 +16,6 @@ private _fnc_checkPosition = {
     50
 ] call jh_fnc_radialScan;
 
-"Finished scan" call jh_fnc_log;
-
 if (count _landingPosition == 0) exitWith {
     {[west, "BLU"] sideChat "Cannot find a landing zone!";} remoteExec ["bis_fnc_call", 0];
 };

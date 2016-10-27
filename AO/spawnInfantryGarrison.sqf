@@ -34,5 +34,7 @@ for "_i" from 0 to 6 do {
     _unitCount = _unitCount + (count units _group);
 };
 
+_groups call jh_fnc_removeFirstAidKits;
+
 ["[AO] %1 town garrison units spawned.", _unitCount] call jh_fnc_log;
 [_groups, "ColorGreen", "hd_dot"] call jh_fnc_debugTrack;

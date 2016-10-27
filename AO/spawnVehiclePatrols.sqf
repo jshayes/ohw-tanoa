@@ -19,6 +19,8 @@ for "_i" from 0 to 2 do {
     _vehicles pushBack _vehicle;
 };
 
+_vehicles call jh_fnc_removeFirstAidKits;
+
 [
     _vehicles,
     jh_pvar_aoPosition,
@@ -33,6 +35,8 @@ _vehicle = [
     jh_pvar_aoPosition,
     ["O_Heli_Attack_02_black_F"]
 ] call Zen_SpawnHelicopter;
+
+_vehicle call jh_fnc_removeFirstAidKits;
 
 // Give the helicopter two rounds of flares
 _vehicle removeMagazinesTurret ["192Rnd_CMFlare_Chaff_Magazine", [-1]];

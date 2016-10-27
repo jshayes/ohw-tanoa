@@ -25,6 +25,8 @@ for "_i" from 0 to 9 do {
     _unitCount = _unitCount + (count units _group);
 };
 
+_groups call jh_fnc_removeFirstAidKits;
+
 [
     _groups,
     jh_pvar_aoPosition,
@@ -58,6 +60,8 @@ for "_i" from 0 to 6 do {
     _groups pushBack _group;
     _unitCount = _unitCount + (count units _group);
 };
+
+_groups call jh_fnc_removeFirstAidKits;
 
 [
     _groups,

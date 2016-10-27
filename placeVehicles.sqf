@@ -33,6 +33,7 @@ for "_i" from 0 to 1 do {
         (_vehiclePos select 1) + 15 * cos (_roadDir) * _i
     ];
     _vehicle = [_vehiclePos, "B_MRAP_01_hmg_F", 0, _vehicleDir] call Zen_SpawnVehicle;
+    _vehicle call jh_fnc_removeFirstAidKits;
 };
 
 [

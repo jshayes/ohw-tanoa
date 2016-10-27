@@ -1,9 +1,10 @@
 #include "Zen_FrameworkFunctions\Zen_InitHeader.sqf"
 
-jh_var_debug = true;
-jh_var_markerDebug = true;
-Zen_Debug_Arguments = true;
-Zen_Print_All_Errors = true;
+jh_var_debug = false;
+jh_var_markerDebug = false;
+Zen_Debug_Arguments = false;
+Zen_Print_All_Errors = false;
+tf_no_auto_long_range_radio = true;
 
 enableSaving [false, false];
 

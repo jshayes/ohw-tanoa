@@ -12,11 +12,13 @@ for "_i" from 0 to 9 do {
 
     _group = [
         _pos,
-        resistance,
+        east,
         ENEMY_SKILL,
         [3, 5],
         "Men",
-        "IND_F"
+        "OPF_T_F",
+        ENEMY_CLASSES,
+        "Expansion"
     ] call ZEN_SpawnInfantry;
 
     _groups pushBack _group;
@@ -44,11 +46,13 @@ for "_i" from 0 to 6 do {
 
     _group = [
         _pos,
-        resistance,
+        east,
         ENEMY_SKILL,
         [2, 3],
         "Men",
-        "IND_F"
+        "OPF_T_F",
+        ENEMY_CLASSES,
+        "Expansion"
     ] call ZEN_SpawnInfantry;
 
     _groups pushBack _group;

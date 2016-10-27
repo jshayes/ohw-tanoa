@@ -13,11 +13,13 @@ for "_i" from 0 to 6 do {
 
     _group = [
         getPosATL _house,
-        resistance,
+        east,
         ENEMY_SKILL,
         [2, 3],
         "Men",
-        "IND_F"
+        "OPF_T_F",
+        ENEMY_CLASSES,
+        "Expansion"
     ] call ZEN_SpawnInfantry;
 
     [

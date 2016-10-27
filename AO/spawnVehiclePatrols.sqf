@@ -13,7 +13,7 @@ for "_i" from 0 to 2 do {
 
     _vehicle = [
         _pos,
-        ["I_MRAP_03_hmg_F"]
+        ["O_T_LSV_02_armed_F"]
     ] call ZEN_SpawnGroundVehicle;
 
     _vehicles pushBack _vehicle;
@@ -31,12 +31,12 @@ for "_i" from 0 to 2 do {
 // Spawn Helicopter
 _vehicle = [
     jh_pvar_aoPosition,
-    ["I_Heli_light_03_F"]
+    ["O_Heli_Attack_02_black_F"]
 ] call Zen_SpawnHelicopter;
 
 // Give the helicopter two rounds of flares
-_vehicle removeMagazinesTurret ["168Rnd_CMFlare_Chaff_Magazine", [-1]];
-_vehicle addMagazineTurret ["168Rnd_CMFlare_Chaff_Magazine", [-1], 48]
+_vehicle removeMagazinesTurret ["192Rnd_CMFlare_Chaff_Magazine", [-1]];
+_vehicle addMagazineTurret ["192Rnd_CMFlare_Chaff_Magazine", [-1], 48];
 
 [
     [_vehicle],

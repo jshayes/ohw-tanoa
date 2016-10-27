@@ -18,7 +18,8 @@ _soundVolume = soundVolume;
 execVM "briefing.sqf";
 
 if (isServer) then {
-    jh_var_playerGroup = group jh_player1;
+    jh_var_playerGroup = group jh_player_SL;
+    execVM "Loadouts\init.sqf";
     execVM "AO\init.sqf";
     execVM "Insertion\init.sqf";
     execVM "placeVehicles.sqf";

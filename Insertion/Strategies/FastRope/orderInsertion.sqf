@@ -7,7 +7,7 @@ jh_pvar_insertHelo lock true;
 
 sleep 5;
 
-[jh_pvar_insertHelo, units group jh_player1] call Zen_OrderFastRope;
+[jh_pvar_insertHelo, units group jh_player_SL] call Zen_OrderFastRope;
 
 sleep 5;
 
